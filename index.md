@@ -8,10 +8,4 @@
 layout: home
 ---
 
-Cayman Blog Theme is a clean, responsive blogging theme for Jekyll. It is inspired by the Cayman Theme for Github Pages, which can be greatly used for single projects but not as blogging platform.
-
-This theme has instead all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
-
-Have a look at the Github page for more information.
-
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
+The College of Creative Studies (CCS) Computing Program provides a small, tight-knit community of talented, passionate, self-directed learners in the context of a major research university. Our program provides well-prepared students an accelerated path through the “lower division” curriculum so that they can move quickly into advanced courses offered both in the CCS and the College of Engineering’s CS Department, which is one of the highest ranked CS departments in the nation. Our goal: early involvement of students in research and creative activity.

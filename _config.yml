@@ -1,12 +1,10 @@
-title: Cayman Blog Theme
-description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and Gitlab/GitHub Pages.
+title: CCS Computing
+description: College of Creative Studies, University of California, Santa Barbara
 show_downloads: true
 
-baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://lorepirri.github.io" # change this to the base hostname & protocol for your site
+baseurl: "/" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://ucsb-ccs-computing.github.io" # change this to the base hostname & protocol for your site
 
-
-google_analytics:
 
 # cayman-blog date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -16,10 +14,9 @@ cayman-blog:
 theme: # leave it empty
 
 # social
-author: lorepirri
-image: /thumbnail-jumbo.png
-twitter:
-  username: lorepirri
+github:
+  owner_name: CCS Computing
+  owner_url: https://github.com/ucsb-ccs-computing/ucsb-ccs-computing.github.io
 
 plugins:
   - jekyll-target-blank
@@ -27,4 +24,31 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['now', 'about', 'contact']
+header_page_refs: ['about', 'students', 'alumni', 'faculty', 'courses']
+
+collections:
+  
+  faculty:
+    permalink: /faculty/:path
+
+  students:
+    permalink: /students/:path
+    output: true
+
+  alumni:
+    permalink: /alumni/:path
+    output: true
+
+defaults:
+
+  - scope:
+      path: ""
+      type: students
+    values:
+      layout: person
+
+  - scope:
+      path: ""
+      type: alumni
+    values:
+      layout: person
