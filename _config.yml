@@ -3,7 +3,7 @@ description: College of Creative Studies, University of California, Santa Barbar
 show_downloads: true
 
 baseurl: "/ccs-computing-site" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://hari387.github.io/" # change this to the base hostname & protocol for your site
+url: "https://hari387.github.io" # change this to the base hostname & protocol for your site
 
 destination: docs/
 
