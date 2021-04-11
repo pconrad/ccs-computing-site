@@ -2,8 +2,8 @@ title: CCS Computing
 description: College of Creative Studies, University of California, Santa Barbara
 show_downloads: true
 
-baseurl: "/" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://ucsb-ccs-computing.github.io" # change this to the base hostname & protocol for your site
+baseurl: "/ccs-computing-site" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://hari387.github.io/" # change this to the base hostname & protocol for your site
 
 destination: docs/
 
