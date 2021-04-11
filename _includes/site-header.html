@@ -21,13 +21,6 @@
           </span>
         </label>
     
-        <select style="display:inline-block;" onchange="if (this.value) window.location.href=this.value">
-          <option value="/">Choose Course:</option>
-          <option value="/F19-1A">F19-1A</option>
-          <option value="/F19-1L">F19-1L</option>
-          <option value="/F20-1A">F20-1A</option>
-        </select>
-       
         <div class="trigger">
           {% for ref in page_refs %}
             {% assign my_page = site.pages | where: "ref", ref | first %}
@@ -39,6 +32,14 @@
             {% endif %}
           {% endfor %}
         </div>
+        
+        <select style="display:inline-block; border="5px solid purple;" onchange="if (this.value) window.location.href=this.value">
+          <option value="/">Choose Course:</option>
+          <option value="/F19-1A">F19-1A</option>
+          <option value="/F19-1L">F19-1L</option>
+          <option value="/F20-1A">F20-1A</option>
+        </select>
+        
       </nav>
     {% endif %}
   </div>
