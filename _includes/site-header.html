@@ -31,15 +31,20 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+           
+          <select class="page-link" style="display: inline-block;" onchange="if (this.value) window.location.href=this.value">
+            <option class="site-nav page-link" value="/">Choose Course:</option>
+            <option class="site-nav page-link" value="/S21-20B">S21-20B</option>
+            <option class="site-nav page-link" value="/W21-20C">W21-20C</option>
+            <option class="site-nav page-link" value="/F20-1A">F20-1A</option>
+            <option class="site-nav page-link" value="/S20-20B">S21-20B</option>
+            <option class="site-nav page-link" value="/S20-20C">S21-20B</option>
+            <option class="site-nav page-link" value="/W20-130H">S21-20B</option>
+            <option class="site-nav page-link" value="/F19-1A">F19-1A</option>
+            <option class="site-nav page-link" value="/F19-1L">F19-1L</option>
+          </select>
         </div>
-        
-        <select style="display:inline-block; border="5px solid purple;" onchange="if (this.value) window.location.href=this.value">
-          <option value="/">Choose Course:</option>
-          <option value="/F19-1A">F19-1A</option>
-          <option value="/F19-1L">F19-1L</option>
-          <option value="/F20-1A">F20-1A</option>
-        </select>
-        
+       
       </nav>
     {% endif %}
   </div>
