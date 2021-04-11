@@ -41,6 +41,9 @@ collections:
     permalink: /alumni/:path
     output: true
 
+  courses:
+    
+
 defaults:
 
   - scope:

@@ -6,4 +6,14 @@ ref: courses
 order: 2
 ---
 
-1A, 1B, 1L, 2, etc.
+{% for course in site.courses %}
+
+## {{course.title}}
+
+Offered: {{course.quarter}}
+
+{{course.content}}
+
+---
+
+{% endfor %}

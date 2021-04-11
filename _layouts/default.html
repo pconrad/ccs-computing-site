@@ -27,7 +27,7 @@
     {% endif %}
 
     {% if page.layout == 'person' %}
-    {% assign page-title = page.name | escape  %}
+    {% assign page-title = page.name | escape %}
     {% endif %}
 
     
@@ -61,15 +61,8 @@
         
         {% if page.layout == 'home' %}
         {% assign page-tagline = site.description | default: site.github.project_tagline | escape %}
-        {% endif %}
-        {% if page.layout == 'page' %}
+        {% else %}
         {% assign page-tagline = page.tagline | escape %}
-        {% endif %}
-        {% if page.layout == 'post' %}
-        {% assign page-tagline = page.tagline | escape  %}
-        {% endif %}
-        {% if page.layout == 'person' %}
-        {% assign page-tagline = page.tagline | escape  %}
         {% endif %}
         
         <section class="page-header">
